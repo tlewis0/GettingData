@@ -1,17 +1,18 @@
 
-Overview:
-
-    The included R script called run_analysis.R reads the data set "getdata_projectfiles_UCI HAR Dataset" available at "https://d396qusza40orc.cloudfront.net" and ouputs a data set to projData.txt which contains a summary of the data by activity and subject
+    Overview:
+  The included R script called run_analysis.R reads the data set "getdata_projectfiles_UCI HAR Dataset" available at "https://d396qusza40orc.cloudfront.net" and ouputs a data set to projData.txt which contains a summary of the data by activity and subject
 
 
 
 The data set is processed in a series of steps:
 
-1) Merged the training and the test sets to create one data set:
+    1) Merged the training and the test sets to create one data set:
+
     Using rbind the test and train datasets are combined into one main dataset having dimensions of 10299 x 561
 
 
 2) Extracted only the measurements on the mean and standard deviation for each measurement:
+    
     The features data set contains a description of the measurement data in that is in the main data set columns. 
 Using this feature data set, the columns in the main data set were removed leaving only the ones columns containing mean or std measurement data.  Data containing meanFreq was also omitted.  This leaves a data set with dimensions of  10299 x 66
 The columns were then labelled corresponding to the measurement data.
