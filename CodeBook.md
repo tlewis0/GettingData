@@ -1,7 +1,7 @@
 
     Data Dictionary - Samsung Sensor Data
 
-Activity
+activity
 
     Activity Code
 
@@ -18,7 +18,7 @@ Activity
         6  LAYING
 
 
-Subject
+subject
 
     Subject Code representing a particular subject
 

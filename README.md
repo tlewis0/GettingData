@@ -1,10 +1,11 @@
 
 Overview:
-  The included R script called run_analysis.R reads the data set "getdata_projectfiles_UCI HAR Dataset" available at "https://d396qusza40orc.cloudfront.net" and ouputs a data set to projData.txt which contains a summary of the data by activity and subject
 
+The included R script called run_analysis.R reads the data set "getdata_projectfiles_UCI HAR Dataset" available at "https://d396qusza40orc.cloudfront.net" and writes a data set to projData.txt which contains a summary of the data by activity and subject
 
 
 The data set is processed in a series of steps:
+
   1) Merged the training and the test sets to create one data set:
   Using rbind the test and train datasets are combined into one main dataset having dimensions of 10299 x 561
 
@@ -21,7 +22,7 @@ The two activity data sets were combined with rbind and, converted to the descri
 This leaves a data set with dimensions of 10299 x 67
 
 
-  4) Add subject values from test and train files to main data set:
+  4) Added subject values from test and train files to main data set:
   The subject data sets are in the files called subject_test.txt and subject_train.txt.
 The two subject data sets were combined with rbind and added to the main data set with cbind.
 This leaves a data set with dimensions of 10299 x 68
@@ -39,18 +40,18 @@ The data set was saved to file "projData.txt using write.table
 "https://d396qusza40orc.cloudfront.net"
 
 
-  R code to download and unzip the file to the working dir:
+R code to download and unzip the file to the working dir:
 
-  fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
-  zipFile <- "UCI_HAR_Dataset.zip"
+zipFile <- "UCI_HAR_Dataset.zip"
 
-  if (!file.exists(zipFile)) {
+if (!file.exists(zipFile)) {
 
-    download.file(fileUrl, destfile = zipFile, method = "curl")
-  }
+  download.file(fileUrl, destfile = zipFile, method = "curl")
+}
 
-  unzip(zipFile) #file will unzip to ./UCI HAR Dataset directory
+unzip(zipFile) #file will unzip to ./UCI HAR Dataset directory
 
 
 
