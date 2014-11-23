@@ -2,47 +2,45 @@
     Data Dictionary - Samsung Sensor Data
 
 Activity
+    
+    Activity Code
 
-  Activity Code
-  
-    1  WALKING
-    
-    2  WALKING_UPSTAIRS
-    
-    3  WALKING_DOWNSTAIRS
-    
-    4  SITTING
-    
-    5  STANDING
-    
-    6  LAYING
+      1  WALKING
+
+      2  WALKING_UPSTAIRS
+
+      3  WALKING_DOWNSTAIRS
+
+      4  SITTING
+
+      5  STANDING
+
+      6  LAYING
 
 
 Subject
-
-  Subject Code representing a particular subject
-  
-    1 .. 30
+    Subject Code representing a particular subject
+        1 .. 30
 
 
 tBodyAcc-mean-X
 
   Sensor data
-  
+
     -1 ... 1
 
 
 tBodyAcc-mean-Y 
 
   Sensor data
-  
+
     -1 ... 1
 
 
 tBodyAcc-mean-Z
 
   Sensor data
-  
+
     -1 ... 1
 
 
@@ -56,42 +54,42 @@ tBodyAcc-std-X
 tBodyAcc-std-Y
 
   Sensor data
-  
+
     -1 ... 1
 
 
 tBodyAcc-std-Z 
 
   Sensor data
-  
+
     -1 ... 1
 
 
 tGravityAcc-mean-X
 
   Sensor data
-  
+
     -1 ... 1
 
 
 tGravityAcc-mean-Y 
 
   Sensor data
-  
+
     -1 ... 1
 
 
 tGravityAcc-mean-Z
 
   Sensor data
-  
+
     -1 ... 1
 
 
 tGravityAcc-std-X 
 
   Sensor data
-  
+
     -1 ... 1
 
 
