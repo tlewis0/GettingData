@@ -1,10 +1,12 @@
 
 Overview:
 
-The included R script called run_analysis.R reads the data set "getdata_projectfiles_UCI HAR Dataset" available at "https://d396qusza40orc.cloudfront.net" and ouputs a data set to projData.txt which contians a summary of the data by activity and subject
+The included R script called run_analysis.R reads the data set "getdata_projectfiles_UCI HAR Dataset" available at "https://d396qusza40orc.cloudfront.net" and ouputs a data set to projData.txt which contains a summary of the data by activity and subject
+
 
 
 The data set is processed in a series of steps:
+
 
 1) Merged the training and the test sets to create one data set:
 
@@ -48,10 +50,11 @@ The data set was saved to file "projData.txt using write.table
 
 
 
-The data set can be downloaded at this location:
-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+The all nececssary data sets are in the zipped file "getdata_projectfiles_UCI HAR Dataset.zip" which can be downloaded at this location:
+"https://d396qusza40orc.cloudfront.net"
 
-R code to download and unzip the file to the working dir
+
+R code to download and unzip the file to the working dir:
 
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
